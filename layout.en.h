@@ -12,9 +12,9 @@ static Key keys_en[] = {
 	{ "0",")", XK_0, 1 },
 	{ "-","_", XK_minus, 1 },
 	{ "=","+", XK_plus, 1 },
-	{ "⌫Bksp",0, XK_BackSpace, 2 },
+	{ "< Bksp",0, XK_BackSpace, 2 },
 	{ 0 }, /* New row */
-	{ "->|",0, XK_Tab, 1 },
+	{ "Tab",0, XK_Tab, 1 },
 	{ 0, 0, XK_q, 1 },
 	{ 0, 0, XK_w, 1 },
 	{ 0, 0, XK_e, 1 },
@@ -27,9 +27,9 @@ static Key keys_en[] = {
 	{ 0, 0, XK_p, 1 },
 	{ "[","{", XK_bracketleft, 1 },
 	{ "]", "}", XK_bracketright, 1 },
-	{ "Enter", 0, XK_Return, 3 },
+	{ "Enter", 0, XK_Return, 2 },
 	{ 0 }, /* New row */
-	{ 0, 0, XK_Caps_Lock, 2 },
+	{ "Escape", 0, XK_Escape, 1 },
 	{ 0, 0, XK_a, 1 },
 	{ 0, 0, XK_s, 1 },
 	{ 0, 0, XK_d, 1 },
@@ -39,11 +39,11 @@ static Key keys_en[] = {
 	{ 0, 0, XK_j, 1 },
 	{ 0, 0, XK_k, 1 },
 	{ 0, 0, XK_l, 1 },
-	{ ":",";", XK_semicolon, 1 },
+	{ ";",":", XK_semicolon, 1 },
 	{ "'","\"", XK_exclam, 1 },
 	{ "\\", "|", XK_backslash, 1 },
 	{ 0 }, /* New row */
-	{ 0, 0, XK_Shift_L, 3 },
+	{ "Shift", 0, XK_Shift_L, 1 },
 	{ 0, 0, XK_z, 1 },
 	{ 0, 0, XK_x, 1 },
 	{ 0, 0, XK_c, 1 },
@@ -54,13 +54,15 @@ static Key keys_en[] = {
 	{ ",", "<", XK_colon, 1 },
 	{ ".", ">", XK_period, 1 },
 	{ "/", "?", XK_slash, 1 },
-	{ 0, 0, XK_Shift_R, 2 },
+	// { "Up", 0, XK_Up, 1 },
+	// { "PrtSc", 0, XK_Print, 1 },
 	{ 0 }, /* New row */
-	{ "Ctrl",0,  XK_Control_L, 2 },
-	{ "Alt", 0, XK_Alt_L, 2 },
+	{ "Ctrl",0,  XK_Control_L, 1 },
+	{ "Super",0,  XK_Super_L, 1 },
+	{ "Alt", 0, XK_Alt_L, 1 },
 	{ "", 0, XK_space, 5 },
-	{ "Alt", 0, XK_Alt_R, 2 },
-	{ "Ctrl", 0, XK_Control_R, 2 },
+	{ "Up", 0, XK_Up, 1 },
+	{ "Down", 0, XK_Down, 1 },
 };
 
 Buttonmod buttonmods[] = {
